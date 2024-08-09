@@ -1,39 +1,39 @@
-// // Local module using common js
-// require("./01-normal-module/add");
+// Local module using common js
+require("./01-normal-module/add");
 
-// // Local module using common js module.exports
-// const add = require("./02-module-exports/add-module-exports");
+// Local module using common js module.exports
+const addLocal = require("./02-module-exports/add-module-exports");
 
-// const sumOne = add(324, 23);
-// const sumTwo = add(1293, 9832);
+const sumOne = addLocal(324, 23);
+const sumTwo = addLocal(1293, 9832);
 
-// console.log("Sum One >>> ", sumOne);
-// console.log("Sum Two >>> ", sumTwo);
+console.log("Sum One >>> ", sumOne);
+console.log("Sum Two >>> ", sumTwo);
 
-// // Module scope each module has seperate scope.
-// require("./03-module-wrapper/batman");
-// require("./03-module-wrapper/superman");
-// require("./03-module-wrapper/iife");
+// Module scope each module has seperate scope.
+require("./03-module-wrapper/batman");
+require("./03-module-wrapper/superman");
+require("./03-module-wrapper/iife");
 
-// // Module caching
-// const superHero = require("./04-module-cache/super-hero");
-// console.log(superHero.getName());
-// superHero.setName("Superman");
-// console.log(superHero.getName());
+// Module caching
+const superHero = require("./04-module-cache/super-hero");
+console.log(superHero.getName());
+superHero.setName("Superman");
+console.log(superHero.getName());
 
-// const newSuperHero = require("./04-module-cache/super-hero");
-// console.log(newSuperHero.getName());
+const newSuperHero = require("./04-module-cache/super-hero");
+console.log(newSuperHero.getName());
 
-// // Avoid module caching
-// const superHeroCreator = require("./04-module-cache/super-hero-avoid-cache");
+// Avoid module caching
+const superHeroCreator = require("./04-module-cache/super-hero-avoid-cache");
 
-// const batman = new superHeroCreator("batman");
-// console.log(batman.getName());
-// batman.setName("Bruce Wayne");
-// console.log(batman.getName());
+const batman = new superHeroCreator("batman");
+console.log(batman.getName());
+batman.setName("Bruce Wayne");
+console.log(batman.getName());
 
-// const superman = new superHeroCreator("superman");
-// console.log(superman.getName());
+const superman = new superHeroCreator("superman");
+console.log(superman.getName());
 
 // // Import export patterns.
 // // Default

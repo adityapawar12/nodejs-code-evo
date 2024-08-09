@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assassin's Creed Quotes</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(135deg, #ececec 0%, #f7f7f7 100%);
+        color: #333;
+        font-family: "El Messiri", sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 20px;
+        color: #000000;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .quote {
+        margin: 30px 0;
+        padding: 30px;
+        background: linear-gradient(135deg, #f9f9f9 0%, #f1f1f1 100%);
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .quote::before {
+        content: "\201C"; /* Decorative quote icon */
+        font-size: 4em;
+        color: #d9d9d9;
+        position: absolute;
+        top: -10px;
+        left: 10px;
+        z-index: 1;
+      }
+
+      .quote::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/57/Assassin%27s_Creed_Logo.png");
+        background-size: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.05;
+        z-index: 0;
+      }
+
+      .quote p {
+        font-size: 1.5em;
+        margin: 0;
+        z-index: 2;
+        position: relative;
+        color: #333;
+        font-style: italic;
+      }
+
+      .author {
+        text-align: right;
+        font-size: 1.2em;
+        color: #666666;
+        margin-top: 15px;
+        z-index: 2;
+        position: relative;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Assassin's Creed Quotes</h1>
+
+      <div class="quote">
+        <p>Nothing is true, everything is permitted.</p>
+        <div class="author">- {{name}}</div>
+      </div>
+
+      <div class="quote">
+        <p>We work in the dark to serve the light. We are Assassins.</p>
+        <div class="author">- {{name}}</div>
+      </div>
+
+      <div class="quote">
+        <p>
+          I have lived my life as best I could, not knowing its purpose, but
+          drawn forward like a moth to a distant moon.
+        </p>
+        <div class="author">- {{name}}</div>
+      </div>
+    </div>
+  </body>
+</html>
