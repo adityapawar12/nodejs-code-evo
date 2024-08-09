@@ -1,0 +1,19 @@
+{
+  "name": "adityapawar-pokedex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "bin": {
+    "adityapawar-pokedex": "index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "inquirer": "^8.2.5",
+    "yargs": "^17.7.2"
+  }
+}
